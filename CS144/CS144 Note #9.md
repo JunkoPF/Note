@@ -20,6 +20,6 @@
 
 Input queue 也存在自己的问题，由于 FIFO 的缘故，队头的 packet 如果在等待其他输入端口传输数据到输出端口，那么该队列中的所有 packet 都需要等待，即使后面的 packet 对应输出端口空闲
 
-<img src="。/../image/header-of-line-blocking.png" style="zoom:100%;" />
+<img src="./image/header-of-line-blocking.png" style="zoom:100%;" />
 
 ## Virtual Output Queue
