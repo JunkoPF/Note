@@ -2,7 +2,7 @@
 
 ## AIMD in single flow
 
-<img src="./image/single-flow-model.png" style="zoom:100%;" />
+<img src="../image/single-flow-model.png" style="zoom:100%;" />
 
 可以在 http://guido.appenzeller.net/anims 看到 single flow AIMD 的动画。
 
@@ -14,7 +14,7 @@
 
 ### buffer size
 
-<img src="./image/buffer-size.png" style="zoom:100%;" />
+<img src="../image/buffer-size.png" style="zoom:100%;" />
 
 为了保证 output link 时刻被完全占用，我们需要保证 buffer 不能太小，buffer 的最小值为
 
@@ -30,7 +30,7 @@ $$
 
 在 single flow 中，throughput 可以被精确计算为 $\dfrac{W(t)}{RTT(t)}$，但是在 mutiple flow 中，由于通常 router 中存在大量的 flow，buffer 中存在来自各个节点的 packet，所以可以认为 buffer 一直保持在满的状态，即 $RTT$ 可以看作一个定值，throughput 可以认为和 $W$ 有关，即 $\dfrac{W(t)}{RTT}$
 
-<img src="./image/multiple-flow-throughput.png" style="zoom:100%;" />
+<img src="../image/multiple-flow-throughput.png" style="zoom:100%;" />
 
 可以看到上图中 single flow 的 cwnd 上升曲线是弯曲的，这是因为每次加法增大对应的时间（即 RTT）在不断增大，而增大的量不变，所以曲线斜率会不断变小。而对于 multiple flow，由于 RTT 可以认为是定值，所以上升曲线是直线。
 
