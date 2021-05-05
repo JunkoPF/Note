@@ -62,6 +62,6 @@ TCAM 中每个存储单元具有三态，因此可以完成不完全匹配的任
 
 ### Generic
 
-<img src="./image/lookup-address-generic.png" style="zoom:100%;" />
+<img src="../image/lookup-address-generic.png" style="zoom:100%;" />
 
 通用查询，将 match 和 action 抽象出来，让 router 和 switch 可以实现更广泛的操作。

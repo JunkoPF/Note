@@ -6,7 +6,7 @@
 
 相对于数据包均匀的到达，相同的数据量下，数据包突发到达会增加延迟。
 
-<img src="./image/burstiness-increases-delay.png" style="zoom:100%;" />
+<img src="../image/burstiness-increases-delay.png" style="zoom:100%;" />
 
 ### Determinism minimizes delay
 
@@ -27,7 +27,7 @@ $$L = \lambda d$$
 
 ### M/M/1 Queue
 
-<img src="./image/MM1-queue.png" style="zoom:100%;" />
+<img src="../image/MM1-queue.png" style="zoom:100%;" />
 
 该队列的输入和输出的时间间隔都服从指数分布，参数分别为 $\lambda$ 和 $\mu$
 
